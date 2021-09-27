@@ -1,9 +1,6 @@
 # frozen_string_literal: true
 
-# This is particualr type of the game,
-# suitable to manage hangman game.
-# Seems, hangrman "board" would be enough to cover
-# this functionality, but anyway.
+# Hangman game
 class Game
   @state = 8 # last is 0
   @word_letters = []
