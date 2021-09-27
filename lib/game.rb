@@ -19,6 +19,14 @@ class Game
   end
 
   def self.move(letter)
-    @state -= 1
+    @state -= 1 unless @word.any? letter
+  end
+
+  def self.won?
+    false
+  end
+
+  def self.lost?
+    @state.zero?
   end
 end
